@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniblox</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #3B235A;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .screen {
+            display: none;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .active {
+            display: block;
+        }
+        .button {
+            background-color: black;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: grey;
+        }
+        .sidebar {
+            position: absolute;
+            left: 20px;
+            top: 100px;
+            text-align: left;
+        }
+        .sidebar button {
+            display: block;
+            width: 150px;
+            text-align: left;
+            padding: 10px;
+        }
+        .profile {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            text-align: right;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .main-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .game-mode-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="menuScreen" class="screen active">
+        <h1>MINIBLOX</h1>
+        <div class="sidebar">
+            <button class="button">Settings</button>
+            <button class="button">Friends (2)</button>
+            <button class="button">Party</button>
+            <button class="button">Shop</button>
+            <button class="button">Rankings</button>
+            <button class="button">Contact</button>
+        </div>
+        <div class="profile">
+            <p><strong>cute_fox_cat_bear</strong></p>
+            <p>XP: 37,371 / 100,000</p>
+            <p>🔥 186 | 💰 4,440,586</p>
+        </div>
+        <div class="main-container">
+            <button class="button" onclick="showGameModes()">Play</button>
+        </div>
+    </div>
+    <div id="gameModeScreen" class="screen">
+        <h2>OneBlock</h2>
+        <p>Survive on a single block and build your own island!</p>
+        <div class="game-mode-container">
+            <button class="button" onclick="goBack()">Back</button>
+        </div>
+    </div>
+    <script>
+        function showGameModes() {
+            document.getElementById('menuScreen').classList.remove('active');
+            document.getElementById('gameModeScreen').classList.add('active');
+        }
+        function goBack() {
+            document.getElementById('gameModeScreen').classList.remove('active');
+            document.getElementById('menuScreen').classList.add('active');
+        }
+    </script>
+</body>
+</html>
