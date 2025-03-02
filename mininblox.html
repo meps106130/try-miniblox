@@ -55,20 +55,38 @@
             width: 100%;
         }
         .game-list {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            justify-content: center;
+            padding: 20px;
         }
         .game-item {
-            padding: 10px;
+            padding: 20px;
             cursor: pointer;
+            border: 2px solid black;
+            background-color: grey;
+            font-size: 20px;
         }
         .game-item:hover {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: lightgrey;
         }
         .game-title {
             font-size: 28px;
             margin-bottom: 20px;
+        }
+        .xp-bar {
+            width: 300px;
+            height: 20px;
+            border: 2px solid white;
+            background-color: skyblue;
+            margin: 5px auto;
+            position: relative;
+        }
+        .xp-progress {
+            height: 100%;
+            background-color: white;
+            width: 37.37%;
         }
     </style>
 </head>
@@ -84,7 +102,7 @@
         </div>
         <div class="profile">
             <p>Username: cute_fox_cat_bear</p>
-            <p>XP: 37,371 / 100,000</p>
+            <div class="xp-bar"><div class="xp-progress"></div></div>
             <p>🔥 186 | 💰 4,440,586</p>
         </div>
         <div class="main-container">
