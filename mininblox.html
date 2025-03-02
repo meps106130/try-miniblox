@@ -1,103 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miniblox</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #3B235A;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            color: white;
-        }
-        .screen {
-            display: none;
-            width: 100vw;
-            height: 100vh;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        .active {
-            display: block;
-        }
-        .button {
-            background-color: black;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            cursor: pointer;
-            font-size: 20px;
-            margin: 10px;
-        }
-        .button:hover {
-            background-color: grey;
-        }
-        .sidebar {
-            position: absolute;
-            left: 20px;
-            top: 100px;
-            text-align: left;
-        }
-        .sidebar button {
-            display: block;
-            width: 150px;
-            text-align: left;
-            padding: 10px;
-        }
-        .profile {
-            position: absolute;
-            right: 20px;
-            top: 20px;
-            text-align: right;
-            background: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .main-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-        .game-mode-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 50px;
-        }
-    </style>
-</head>
-<body>
-    <div id="menuScreen" class="screen active">
-        <h1>MINIBLOX</h1>
-        <div class="sidebar">
-            <button class="button">Settings</button>
-            <button class="button">Friends (2)</button>
-            <button class="button">Party</button>
-            <button class="button">Shop</button>
-            <button class="button">Rankings</button>
-            <button class="button">Contact</button>
-        </div>
-        <div class="profile">
-            <p><strong>cute_fox_cat_bear</strong></p>
-            <p>XP: 37,371 / 100,000</p>
-            <p>🔥 186 | 💰 4,440,586</p>
-        </div>
+你說：
+
+
+請寫出一個網站,像圖(1)樣,點擊底下的play時,換變成圖(2)
+ChatGPT 說：
+這是一個簡單的 HTML+CSS+JavaScript 網站，點擊「Play」按鈕後，畫面會從第一張圖（主選單）切換到第二張圖（遊戲模式選單）。
+
+Miniblox Play Ui
+這個網站包含兩個畫面：
+
+主選單（menuScreen）顯示標題和「Play」按鈕。
+遊戲模式選單（gameModeScreen）顯示 OneBlock 模式的描述，並有一個返回按鈕。
+點擊「Play」時，會切換到遊戲模式選單；點擊「Back」可以回到主選單。你可以根據需要添加更多樣式或功能！
+
+
+
+
+
+
+你說：
+我要螢幕中所有的物品都出現,:ex:seting friend party shop Ranking 和角色資料
+ChatGPT 說：
+進行了 1 次編輯
+我已經將側邊欄（Settings, Friends, Party, Shop, Rankings）和角色資訊（名稱、經驗值、貨幣等）添加到畫面中。現在所有內容都會顯示在螢幕上！你還需要其他調整嗎？
+
+
+
+
+
+
+你說：
+已詢問 ChatGPT
+
+排版也要一模一樣
+ChatGPT 說：
+進行了 1 次編輯
+我已經更新了你的 UI，確保所有的按鈕（Settings、Friends、Party、Shop、Ranking、角色資料）都完整顯示，並且保持與你的排版一致。請檢查看看是否符合你的需求！🚀
+
+
+
+
+
+
+你說：
+
+我希望字體要像素版,按鈕要大一點,play按鈕要在底下,所有按鈕都要細黑框和灰底,按下play時,不只要顯示oneblock,所有的遊戲都要有,如果滑鼠放上去,那上面的顯示條就顯示那個遊戲的名稱,大廳背景使用
+ChatGPT 說：
+我會根據你的要求進行以下更新：
+
+字體改為像素風格
+按鈕變大，並且使用 細黑框+灰色背景
+Play 按鈕放到底部
+遊戲模式清單顯示所有模式
+滑鼠懸停時，標題顯示對應的遊戲名稱
+使用你提供的圖片作為背景
+我現在來修改程式碼，請稍等。
+
+進行了 1 次編輯
+我已經修改了你的 UI，具體更新包括：
+
+像素字體
+按鈕變大，灰色背景 + 細黑邊框
+Play 按鈕移到底部
+遊戲清單顯示所有模式
+滑鼠懸停顯示對應遊戲名稱
+使用你提供的圖片作為背景
+請測試看看是否符合你的需求，或有需要微調的地方！
+
+
+
+
+
+
+
+
+
+
+
+搜尋
+
+推理
+
+ChatGPT 可能會發生錯誤。請查核重要資訊。
+?
+ChatGPT 說：我已經修改了你的 UI，具體更新包括： - **像素字體** - **按鈕變大，灰色背景 + 細黑邊框** - **Play 按鈕移到底部** - **遊戲清單顯示所有模式** - **滑鼠懸停顯示對應遊戲名稱** - **使用你提供的圖片作為背景** 請測試看看是否符合你的需求，或有需要微調的地方！
+
+
+Miniblox Play Ui
+
+
+
+
+
+
+預覽
+
+
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
         <div class="main-container">
             <button class="button" onclick="showGameModes()">Play</button>
         </div>
     </div>
     <div id="gameModeScreen" class="screen">
-        <h2>OneBlock</h2>
-        <p>Survive on a single block and build your own island!</p>
-        <div class="game-mode-container">
-            <button class="button" onclick="goBack()">Back</button>
+        <h2 class="game-title">Select a Game Mode</h2>
+        <div class="game-list">
+            <div class="game-item" onmouseover="updateTitle('OneBlock')">OneBlock</div>
+            <div class="game-item" onmouseover="updateTitle('Survival')">Survival</div>
+            <div class="game-item" onmouseover="updateTitle('Creative')">Creative</div>
+            <div class="game-item" onmouseover="updateTitle('SkyBlock v2')">SkyBlock v2</div>
+            <div class="game-item" onmouseover="updateTitle('KitPvP')">KitPvP</div>
+            <div class="game-item" onmouseover="updateTitle('Skywars')">Skywars</div>
+            <div class="game-item" onmouseover="updateTitle('Eggwars Doubles')">Eggwars Doubles</div>
+            <div class="game-item" onmouseover="updateTitle('Eggwars Quads')">Eggwars Quads</div>
+            <div class="game-item" onmouseover="updateTitle('Blitz Build')">Blitz Build</div>
+            <div class="game-item" onmouseover="updateTitle('Bridge Duels')">Bridge Duels</div>
+            <div class="game-item" onmouseover="updateTitle('Parkour')">Parkour</div>
+            <div class="game-item" onmouseover="updateTitle('Classic PvP')">Classic PvP</div>
         </div>
+        <button class="button" onclick="goBack()">Back</button>
     </div>
     <script>
         function showGameModes() {
@@ -108,6 +163,10 @@
             document.getElementById('gameModeScreen').classList.remove('active');
             document.getElementById('menuScreen').classList.add('active');
         }
+        function updateTitle(gameName) {
+            document.querySelector('.game-title').textContent = gameName;
+        }
     </script>
 </body>
 </html>
+
